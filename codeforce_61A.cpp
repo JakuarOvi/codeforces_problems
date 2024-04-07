@@ -4,7 +4,6 @@
 using namespace std;
 int main()
 {
-    fastread();
     string a,b,c;
     cin>>a>>b;
     int n = a.length();
