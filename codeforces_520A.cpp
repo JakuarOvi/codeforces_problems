@@ -10,11 +10,8 @@ int main()
 
     for(int i=0; i<n; i++)
     {
-        if (s[i] >= 'A' && s[i] <= 'Z')
-        {
-         s[i] += 'a' - 'A';
+        if (s[i] >= 'A' && s[i] <= 'Z') s[i] += 'a' - 'A';
             S.insert(s[i]);
-        }
     }
     if(S.size()==26)
         cout<<"YES"<<endl;
