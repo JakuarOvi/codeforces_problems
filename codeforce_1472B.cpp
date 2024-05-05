@@ -16,28 +16,29 @@ using namespace std;
 
 int main() {
     // Your code here
-    tc {
-        int n;
-        cin >> n;
-
-        int count1 = 0, count2 = 0;
-        int w;
-
-        for (int i = 0; i < n; i++) {
-            cin >> w;
-            if (w == 1) {
-                count1++;
-            } else {
-                count2++;
-            }
-        }
-
-        if (count1 % 2 == 0 && count2 % 2 == 0) {
-            cout << "YES" << endl;
-        } else {
-            cout << "NO" << endl;
-        }
+     int n, x;
+  tc{
+    cin>>n;
+    int cnt1 = 0, cnt2 = 0;
+    for(int i = 0; i < n; i++){
+      cin>>x;
+      if(x == 1){
+        cnt1++;
+        continue;
+      }
+      cnt2++;
     }
-
-    return 0;
+    if(cnt2 % 2 == 0 && cnt1 % 2 == 0){
+      yes;
+      continue;
+    }
+    if(cnt2 % 2 != 0 && cnt1 % 2 == 0 && cnt1 > 0){
+     yes;
+      continue;
+    }
+   no;
+  }
+  return 0;
 }
+
+ 
