@@ -21,11 +21,7 @@ int main()
         else
             no;
     }
-   
-  }
       
-      
-       
       
 }
     
