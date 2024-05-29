@@ -6,6 +6,7 @@ using namespace std;
 #define no             cout<<"NO"<<endl
 #define ll             long long int 
 #define cin(n)         int n; cin>>n;
+#define tc             int t; cin>>t; while(t--)
 #define vi             vector<int>
 #define input(a,n)     for(int i=0;i<n;i++) cin>>a[i];
 #define mod            1000000007
