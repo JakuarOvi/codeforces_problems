@@ -1,31 +1,32 @@
-#include <bits/stdc++.h>
+//MD Jakuar Hossain Ovi
+#include<bits/stdc++.h>
 using namespace std;
+#define sort(a)        sort(a,a+n)
+#define yes            cout<<"YES"<<endl
+#define no             cout<<"NO"<<endl
+#define ll             long long int 
+#define cin(n)         int n; cin>>n;
+#define tc             int t; cin>>t; while(t--)
+#define vi             vector<int>
+#define input(a,n)     for(int i=0;i<n;i++) cin>>a[i];
+#define loop(a,n)     for(int i=0;i<n;i++)
+#define mod            1000000007
+#define end1           "\n"
+ #define fast()        ios::sync_with_stdio(false); cin.tie(nullptr)
 
-int main()
-{
-    int T;
-    cin >> T;
-    while (T--)
-    {
-        string s;
-        cin >> s;
-        if (s[0] != 'y' && s[0] != 'Y')
-        {
-            cout << "NO\n";
-        }
-        else if (s[1] != 'e' && s[1] != 'E')
-        {
-            cout << "NO\n";
-        }
-        else if (s[2] != 's' && s[2] != 'S')
-        {
-            cout << "NO\n";
-        }
-        else
-        {
-            cout << "YES\n";
-        }
-        
+
+int main() {
+        fast();
+       tc{
+           int n;
+    cin>>n;
+    string s;
+    cin>>s;
+    unordered_set<char> uos;
+    for(char c : s){
+      uos.insert(c);
     }
-    return 0;
+    cout<<n+uos.size()<<endl;
+       }
+        
 }
