@@ -21,7 +21,7 @@ int main() {
         cin(n);
         int a[n];
         input(a,n);
-        int sum=0;
+        ll sum=0;
         loop(n)
         {
          sum+=a[i];
